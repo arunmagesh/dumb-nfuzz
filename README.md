@@ -25,14 +25,23 @@ Usage
    python3 nfuzz.py .py  -i "0.0.0.0" -p "1883" -P 0.2 -f "./in/*"  -l 1000  -v 1 -t 0 -r 1 -j 1 -c "connect"
 
 -i -> IP address of the host
+
 -p -> port number
+
 -P -> percent of the random mutator, ie number of mutated packet/number of packet
+
 -f -> The file containing sample file. Use * to select all files in a folder 
+
 -l -> number of fuzzing iteration 
+
 -v -> verbose - print all the output in the screen
+
 -t -> timeout in seconds - timeout between each fuzz
+
 -r -> radamsa mode - use radamsa mutator instead of the inbuilt one
+
 -j -> log to json file 
+
 -c -> first connection packet if the protocol needs one like mqtt
 
 Generating the sample data
