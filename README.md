@@ -13,8 +13,7 @@ This should never be used on any live server or should not be tested without the
 Requirements
 ------------
 
-You need to have python3. 
-Not many are needed, Just pyradamsa. 
+pyradamsa is the only special deps. rest should be inbuilt with python. 
 
 pip install pyradamsa
 
@@ -22,7 +21,7 @@ pip install pyradamsa
 Usage
 ------------
 
-   python3 nfuzz.py .py  -i "0.0.0.0" -p "1883" -P 0.2 -f "./in/*"  -l 1000  -v 1 -t 0 -r 1 -j 1 -c "connect"
+   python3 nfuzz.py .py  -i "0.0.0.0" -p "1883" -P 0.2 -f "./in/*"  -l 1000  -v -t 0 -r -j -c "connect"
 
 -i -> IP address of the host
 
